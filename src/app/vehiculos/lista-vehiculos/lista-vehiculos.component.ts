@@ -24,4 +24,12 @@ export class ListaVehiculosComponent implements OnInit{
     });
   }
 
+  getListaMarcas() {
+    return Array.from(new Set(this.vehiculos.map(v => v.marca || "")))
+  }
+
+  contarMarca(marca: string) {
+    return this.vehiculos.filter(v => v.marca === marca).length
+  }
+
 }
