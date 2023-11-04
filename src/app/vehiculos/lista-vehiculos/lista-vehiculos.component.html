@@ -1,0 +1,26 @@
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <span class="fs-4">TuSegundazo.com</span>
+        </a>
+        <img src="./assets/banner.png" class="img-fluid" alt="banner">
+    </header>
+    <table class="table">
+        <thead class="table-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Linea</th>
+            <th scope="col">Modelo</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let vehiculo of vehiculos">
+            <th scope="row">{{vehiculo.id}}</th>
+            <td>{{vehiculo.marca}}</td>
+            <td>{{vehiculo.linea}}</td>
+            <td>{{vehiculo.modelo}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
